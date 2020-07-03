@@ -5,6 +5,7 @@ const matchList = document.getElementById('match-list');
 const searchPays = async searchText => {
     const res = await fetch('./data/countries.json');
     const pays = await res.json();
+    console.log("thomas")
 
 //Get matches to current text input
 let matches = pays.filter(Pays=>{
